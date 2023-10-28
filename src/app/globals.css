@@ -18,10 +18,23 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--fbackground-end-rgb));;
+}
+.container{
+  @apply px-4 sm:px-8 py-4 mx-auto max-w-screen-2xl;
+}
+.header {
+  @apply shadow sticky inset-0 bg-white/70 backdrop-blur;
+}
+.heading-one {
+  @apply font-bold text-base md:text-lg xl:text-xl mb-2;
+}
+p {
+  @apply mb-2 text-sm md:text-base xl:text-lg;
+}
+.btn {
+  @apply px-6 py-2 rounded;
+}
+.header-cta {
+  @apply bg-slate-500 hover:bg-slate-300 text-white hover:text-slate-700 transition-all font-bold text-sm;
 }
