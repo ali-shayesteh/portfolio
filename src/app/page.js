@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="container">
-
       {/* Intro */}
       <div className="my-4 flex flex-col justify-center items-center">
           <div className="w-16 h-16 rounded-full bg-slate-300 flex justify-center items-center mb-3">
