@@ -8,9 +8,25 @@ import Github from "../header/icon/github";
 import LinkedIn from "../header/icon/linkedIn";
 import Twitter from "../header/icon/twitter";
 
-
 export default function MobileMenu() {
   const [show, setShow] = useState(false);
+  const [hide, setHide] = useState(true);
+
+  const toggleMenu = (close) => {
+    return new Promise(() => {
+      if (close) {
+        setShow(false);
+        setTimeout(() => {
+          setHide(true);
+        }, 200);
+      } else {
+        setHide(false);
+        setTimeout(() => {
+          setShow(true);
+        }, 10);
+      }
+    });
+  };
 
   const menuWapper = useRef(null);
 
@@ -22,7 +38,7 @@ export default function MobileMenu() {
         menuWapper.current &&
         !menuWapper.current.contains(e.target)
       ) {
-        setShow(false);
+        toggleMenu(true);
       }
     };
 
@@ -35,7 +51,7 @@ export default function MobileMenu() {
   return (
     <>
       <div
-        onClick={() => setShow((cur) => !cur)}
+        onClick={() => toggleMenu(false)}
         className="cursor-pointer flex items-center"
       >
         <div className={classNames("mobile-menu", show && "change")}>
@@ -47,8 +63,9 @@ export default function MobileMenu() {
 
       <div
         className={classNames(
-          show ? "opacity-100" : "opacity-0 -z-10",
-          "bg-black/30 inset-0 absolute w-screen h-screen transition-all"
+          show ? "opacity-100" : "opacity-0 -z-20",
+          "bg-black/30 inset-0 fixed w-screen transition-all h-screen duration-200",
+          hide ? "hidden" : "block"
         )}
       >
         <div
@@ -72,7 +89,7 @@ export default function MobileMenu() {
                 <li className="mb-4" key={idx}>
                   <Link
                     className="w-full p-1 flex items-center gap-2 text-sm text-slate-600 hover:bg-slate-200 rounded-full"
-                    onClick={() => setShow(false)}
+                    onClick={() => toggleMenu(true)}
                     href={item.href}
                   >
                     <div className="w-8 h-8 rounded-full border flex items-center justify-center">
@@ -85,35 +102,35 @@ export default function MobileMenu() {
               ))}
             </ul>
 
-            <Link href="contact" className="btn header-cta w-full block text-center my-10">
+            <Link
+              href="contact"
+              className="btn header-cta w-full block text-center my-10"
+            >
               Get in Touch
             </Link>
 
             <div className="gap-8 items-center flex mt-6 justify-center">
-            <div>
-              <a target="_blank" href="https://www.x.com/alishayesteh.ir">
-                <Twitter />
-              </a>
+              <div>
+                <a target="_blank" href="https://www.x.com/alishayesteh.ir">
+                  <Twitter />
+                </a>
+              </div>
+
+              <div>
+                <a target="_blank" href="https://www.github.com/ali-shayesteh">
+                  <Github />
+                </a>
+              </div>
+
+              <div>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ali-shayesteh"
+                >
+                  <LinkedIn />
+                </a>
+              </div>
             </div>
-
-            <div>
-              <a target="_blank" href="https://www.github.com/ali-shayesteh">
-                <Github />
-              </a>
-            </div>
-
-            <div>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/ali-shayesteh"
-              >
-                <LinkedIn />
-              </a>
-            </div>
-            
-          </div>
-
-
           </div>
         </div>
       </div>
