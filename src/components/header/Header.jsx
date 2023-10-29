@@ -11,9 +11,9 @@ export default function Header() {
     <header className="header">
       <div className="container flex justify-between items-center">
         <div className="">
-          <a href="/" className="font-semibold text-lg">
+          <Link href="/" className="font-semibold text-lg">
             Ali Shayesteh
-          </a>
+          </Link>
         </div>
 
         <div className="gap-6 items-center hidden sm:flex">
