@@ -2,8 +2,9 @@ import { MENU } from "@/constant/config";
 import Link from "next/link";
 
 const move = function (arr, from, to) {
-    arr.splice(to, 0, arr.splice(from, 1)[0]);
-    return arr
+    const res = [...arr]
+    res.splice(to, 0, res.splice(from, 1)[0]);
+    return res
   };
 
 export default function BottomAppBar(){
