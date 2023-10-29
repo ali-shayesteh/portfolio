@@ -72,7 +72,7 @@ export default function MobileMenu() {
           ref={menuWapper}
           className={classNames(
             show ? "scale-x-100" : "scale-x-0",
-            "bg-white h-screen shadow-lg w-4/6 transition-all origin-left"
+            "bg-white h-screen shadow-lg w-5/6 transition-all origin-left"
           )}
         >
           {/* <div className="flex justify-end pt-3 pr-5">
