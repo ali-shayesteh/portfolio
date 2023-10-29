@@ -89,7 +89,7 @@ export default function MobileMenu() {
               Get in Touch
             </Link>
 
-            <div className="gap-6 items-center flex mt-6 justify-center">
+            <div className="gap-8 items-center flex mt-6 justify-center">
             <div>
               <a target="_blank" href="https://www.x.com/alishayesteh.ir">
                 <Twitter />
@@ -110,7 +110,7 @@ export default function MobileMenu() {
                 <LinkedIn />
               </a>
             </div>
-            <div className="border-l h-3 border-slate-300" />
+            
           </div>
 
 
