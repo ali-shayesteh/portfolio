@@ -5,7 +5,7 @@ import Header from '@/components/header/Header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Ali Shayesteh',
+  title: 'Ali Shayesteh | Frontend Engineer Reactjs Nextjs',
   description: "I'm a frontend engineer, specialized in Javascript, Reactjs, Nextjs, performance enthusiast",
 }
 

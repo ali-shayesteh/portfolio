@@ -3,9 +3,11 @@ import Link from "next/link";
 import Github from "./icon/github";
 import LinkedIn from "./icon/linkedIn";
 import Twitter from "./icon/twitter";
+import MobileMenu from "../mobile/mobileMenu";
 
 export default function Header() {
   return (
+    <>
     <header className="header">
       <div className="container flex justify-between items-center">
         <div className="">
@@ -54,17 +56,17 @@ export default function Header() {
             </div>
             <div className="border-l h-3 border-slate-300" />
           </div>
-          
-
           <Link href="contact" className="btn header-cta">
             Get in Touch
           </Link>
         </div>
         {/* Mobile Menu */}
         <div className="sm:hidden">
-          <span className="text-xl cursor-pointer">☰</span>
+        <MobileMenu />
         </div>
       </div>
     </header>
+
+    </>
   );
 }
