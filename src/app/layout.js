@@ -6,6 +6,7 @@ import Footer from "@/components/footer/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  manifest: "/manifest.json",
   title: "Ali Shayesteh | Frontend Engineer Reactjs Nextjs",
   description:
     "I'm a frontend engineer, specialized in Javascript, Reactjs, Nextjs, performance enthusiast",

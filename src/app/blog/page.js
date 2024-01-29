@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import { allPosts } from 'contentlayer/generated'
+import Link from 'next/link';
 
 export const metadata = {
   title: "Blog Ali Shayesteh | Frontend Engineer Reactjs Nextjs",
@@ -12,7 +12,6 @@ export default function Blog() {
     <div className="container">
       {/* Intro */}
       <div className="my-4 ">
-       
         <div>
           <h1 className="heading-one">{"Blog"}</h1>
           <div className="border-b mb-6" />
@@ -22,6 +21,13 @@ export default function Blog() {
 
       <div>
         <h2 className="heading-two">{"Recent posts"}</h2>
+        <ul>
+        {allPosts.map((post) => (
+          <li key={post.slug}>
+            <Link href={"/blog/" + post.slug}>{post.title}</Link>
+          </li>
+        ))}
+      </ul>
       </div>
     </div>
   );

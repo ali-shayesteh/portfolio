@@ -1,4 +1,8 @@
-import { HomeIcon, UserIcon, DocumentTextIcon } from "@heroicons/react/24/solid";
+import {
+  HomeIcon,
+  UserIcon,
+  DocumentTextIcon,
+} from "@heroicons/react/24/solid";
 
 export const MENU = [
   {
@@ -11,9 +15,9 @@ export const MENU = [
     href: "/about",
     icon: UserIcon,
   },
-  {
-    title: "Blog",
-    href: "/blog",
-    icon: DocumentTextIcon,
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  //   icon: DocumentTextIcon,
+  // },
 ];
