@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "ir.alishayesteh.www.twa",
+        "sha256_cert_fingerprints": ["1A:E3:14:1D:CA:C1:8C:89:7E:17:8A:C6:24:10:04:94:5E:98:AA:B2:BB:A2:82:7E:AD:47:DF:B8:AD:79:20:3F"]
+      }
+    }]
