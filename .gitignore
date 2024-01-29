@@ -38,6 +38,6 @@ next-env.d.ts
 /.contentlayer/
 
 # all other ignore list
-sw.*
-workbox-*
-swe-worker-*
+# sw.*
+# workbox-*
+# swe-worker-*
