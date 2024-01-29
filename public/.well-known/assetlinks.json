@@ -2,7 +2,7 @@
   {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
-      "namespace": "android",
+      "namespace": "android_app",
       "package_name": "ir.alishayesteh.twa",
       "sha256_cert_fingerprints": [
         "3B:88:4B:56:A1:B1:2D:98:1E:80:D7:DC:60:DB:FB:13:CC:D7:1F:1A:F3:E2:C7:CD:C3:34:BD:65:99:8E:C7:DD"
