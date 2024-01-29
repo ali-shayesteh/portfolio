@@ -1,8 +1,12 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "ir.alishayesteh.www.twa",
-        "sha256_cert_fingerprints": ["1A:E3:14:1D:CA:C1:8C:89:7E:17:8A:C6:24:10:04:94:5E:98:AA:B2:BB:A2:82:7E:AD:47:DF:B8:AD:79:20:3F"]
-      }
-    }]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ir.alishayesteh.www.twa",
+      "sha256_cert_fingerprints": [
+        "3B:88:4B:56:A1:B1:2D:98:1E:80:D7:DC:60:DB:FB:13:CC:D7:1F:1A:F3:E2:C7:CD:C3:34:BD:65:99:8E:C7:DD"
+      ]
+    }
+  }
+]
