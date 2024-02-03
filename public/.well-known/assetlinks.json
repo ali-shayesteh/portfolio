@@ -3,9 +3,9 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "ir.alishayesteh.twa",
+      "package_name": "ir.alishayesteh.www.twa",
       "sha256_cert_fingerprints": [
-        "30:53:F6:D2:86:C5:BB:6B:04:47:D8:AE:FF:DC:02:2A:AE:F7:3C:0B:32:27:12:C2:19:01:11:21:23:EE:87:72"
+        "1A:E3:14:1D:CA:C1:8C:89:7E:17:8A:C6:24:10:04:94:5E:98:AA:B2:BB:A2:82:7E:AD:47:DF:B8:AD:79:20:3F"
       ]
     }
   }
