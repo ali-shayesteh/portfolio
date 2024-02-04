@@ -9,7 +9,7 @@ const withPWA = require("next-pwa")({
 });
 
 const nextconfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   //   disableImportAliasWarning: true,
 };
 
