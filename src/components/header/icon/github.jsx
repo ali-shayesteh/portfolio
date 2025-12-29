@@ -1,5 +1,9 @@
 const Github = () => (
-  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-6 w-6 fill-slate-400 hover:fill-slate-700 transition-all">
+  <svg
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    className="h-6 w-6 fill-accent/40 hover:fill-accent transition-all"
+  >
     <path
       fillRule="evenodd"
       clipRule="evenodd"
@@ -8,4 +12,4 @@ const Github = () => (
   </svg>
 );
 
-export default Github
+export default Github;

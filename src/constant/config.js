@@ -11,13 +11,13 @@ export const MENU = [
     icon: HomeIcon,
   },
   {
-    title: "About",
-    href: "/about",
+    title: "Resume",
+    href: "/resume",
     icon: UserIcon,
   },
-  // {
-  //   title: "Blog",
-  //   href: "/blog",
-  //   icon: DocumentTextIcon,
-  // },
+  {
+    title: "Contact",
+    href: "/contact",
+    icon: DocumentTextIcon,
+  },
 ];

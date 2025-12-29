@@ -18,10 +18,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--fbackground-end-rgb));;
+  background: rgb(var(--fbackground-end-rgb));
 }
-.container{
-  @apply px-4 sm:px-8 py-4 mx-auto max-w-screen-2xl;
+.container {
+  @apply px-4 sm:px-8 py-4 mx-auto max-w-screen-md;
 }
 .header {
   @apply shadow sticky inset-0 bg-white/70 backdrop-blur;
@@ -39,28 +39,28 @@ p {
   @apply px-6 py-2 rounded;
 }
 .header-cta {
-  @apply bg-slate-500 hover:bg-slate-300 text-white hover:text-slate-700 transition-all font-bold text-sm;
+  @apply bg-accent/30 hover:bg-accent text-accent hover:text-white transition-all font-semibold text-sm;
 }
-.mobile-menu .bar{
-	width: 25px;
-	height: 3px;
-	background-color: #999;
-	margin: 5px 0;
-	transition: 0.3s;
+.mobile-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #999;
+  margin: 5px 0;
+  transition: 0.3s;
 }
 .dark .mobile-menu .bar {
-	background-color: #fff;
+  background-color: #fff;
 }
 .mobile-menu.change .bar1 {
-	transform: translate(0, 8px) rotate(-45deg);
+  transform: translate(0, 8px) rotate(-45deg);
 }
 .mobile-menu.change .bar2 {
-	opacity: 0;
+  opacity: 0;
 }
 .mobile-menu.change .bar3 {
-	transform: translate(0, -8px) rotate(45deg);
+  transform: translate(0, -8px) rotate(45deg);
 }
 .mobile-menu {
-	display: inline-block;
+  display: inline-block;
   cursor: pointer;
 }

@@ -88,12 +88,12 @@ export default function MobileMenu() {
               {MENU.map((item, idx) => (
                 <li className="mb-4" key={idx}>
                   <Link
-                    className="w-full p-1 flex items-center gap-2 text-sm text-slate-600 hover:bg-slate-200 rounded-full"
+                    className="w-full p-1 flex items-center gap-2 text-sm text-slate-600 hover:bg-accent/20 rounded-full"
                     onClick={() => toggleMenu(true)}
                     href={item.href}
                   >
                     <div className="w-8 h-8 rounded-full border flex items-center justify-center">
-                      <item.icon className="w-5 h-5 text-slate-400" />
+                      <item.icon className="w-5 h-5 text-accent/50" />
                     </div>
 
                     {item.title}
@@ -103,19 +103,13 @@ export default function MobileMenu() {
             </ul>
 
             <Link
-              href="contact"
+              href="/files/Ali_Shayesteh_Frontend_Engineer.pdf"
               className="btn header-cta w-full block text-center my-10"
             >
-              Get in Touch
+              Download CV
             </Link>
 
             <div className="gap-8 items-center flex mt-6 justify-center">
-              <div>
-                <a target="_blank" href="https://www.x.com/alishayesteh.ir">
-                  <Twitter />
-                </a>
-              </div>
-
               <div>
                 <a target="_blank" href="https://www.github.com/ali-shayesteh">
                   <Github />
