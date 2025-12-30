@@ -21,7 +21,7 @@ body {
   background: rgb(var(--fbackground-end-rgb));
 }
 .container {
-  @apply px-4 sm:px-8 py-4 mx-auto max-w-screen-md;
+  @apply px-4 sm:px-8 py-4 mx-auto max-w-screen-lg;
 }
 .header {
   @apply shadow sticky inset-0 bg-white/70 backdrop-blur;
